@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>18th Edition Test Values</title>
+  <link rel="manifest" href="manifest.json" />
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; background: #f0f0f0; }
+    h1 { color: #003366; }
+    .card {
+      background: #fff; padding: 15px; margin: 10px 0; border-left: 5px solid #003366;
+    }
+    a { color: #007acc; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+  <h1>18th Edition Test Values (UK)</h1>
+
+  <div class="card">
+    <h2>Continuity of Protective Conductors</h2>
+    <p>Expected: Close to 0Ω, depending on cable length and CSA.</p>
+    <p><a href="https://electrical.theiet.org/media/1176/testing-guide.pdf" target="_blank">IET Guidance PDF</a></p>
+  </div>
+
+  <div class="card">
+    <h2>Insulation Resistance</h2>
+    <p>Minimum: 1 MΩ (tested at 500V DC).</p>
+    <p><a href="https://www.voltimum.co.uk/articles/testing-insulation-resistance-18th-edition" target="_blank">Voltimum Article</a></p>
+  </div>
+
+  <div class="card">
+    <h2>Earth Loop Impedance (Zs)</h2>
+    <p>Compare with tables 41.3-41.5 in BS 7671.</p>
+    <p><a href="https://www.tester.co.uk/media/wysiwyg/guides/earth-loop-impedance-testing-guide.pdf" target="_blank">Earth Loop Guide</a></p>
+  </div>
+
+  <div class="card">
+    <h2>RCD Testing</h2>
+    <p>30mA RCD: Should trip within 300ms under test.</p>
+    <p><a href="https://www.niccertification.com/images/downloads/SN7_RCD_Testing.pdf" target="_blank">NICEIC Guide</a></p>
+  </div>
+
+  <div class="card">
+    <h2>Prospective Fault Current (PFC)</h2>
+    <p>Measure at origin. Should exceed fault current.</p>
+    <p><a href="https://www.electricalsafetyfirst.org.uk/professional-resources/technical-guidance/" target="_blank">Electrical Safety First</a></p>
+  </div>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js')
+        .then(() => console.log('Service Worker Registered'));
+    }
+  </script>
+</body>
+</html>
